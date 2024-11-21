@@ -15,6 +15,15 @@ public class PlayerCharacter {
         if(move == 'w') {
           y++ ;
        }
+        else if(move == 's') {
+            y--;
+        }
+        else if(move == 'a') {
+            x--;
+        } else if (move=='d') {
+            x++;
+
+        }
 
     }
 }

@@ -37,4 +37,32 @@ void getX_expect0_whenStart() {
 
         // THEN
     }
+    @Test
+    void move_expectDown_GivenS() {
+    //Given
+
+    char down = 's';
+    //Expect
+        int expectedY = -1;
+        PlayerCharacter.move(down);
+        int actualY =PlayerCharacter.getY();
+        Assertions.assertEquals(expectedY,actualY);
+    }
+    @Test
+    void move_expectLeft_GivenA() {
+    char left = 'a';
+    int expectedX = -1;
+    PlayerCharacter.move(left);
+    int actualX =PlayerCharacter.getX();
+    Assertions.assertEquals(expectedX,actualX);
+
+    }
+    @Test
+    void move_expectRight_GivendD (){
+    char right = 'd';
+    int expectedX = 1;
+    PlayerCharacter.move(right);
+    int actualX =PlayerCharacter.getX();
+    Assertions.assertEquals(expectedX,actualX);
+    }
 }
