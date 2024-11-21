@@ -28,7 +28,12 @@ void getX_expect0_whenStart() {
     void move_expectUp_GivenW() {
         // GIVEN
         char up = 'w';
+        //Expect
+        int expectedY= 1;
         // WHEN
+        PlayerCharacter.move(up);
+        int actualY =PlayerCharacter.getY();
+       Assertions.assertEquals(expectedY,actualY);
 
         // THEN
     }
