@@ -1,7 +1,7 @@
 package org.example;
 
 public class PlayerCharacter {
-   static int x=0;
+    static int x=0;
     static int y= 0;
     public static int getX() {
         return x;
@@ -9,6 +9,13 @@ public class PlayerCharacter {
 
     public static int getY() {
         return y;
+    }
+
+    public static void setX(int x) {
+        PlayerCharacter.x = x;
+    }
+    public static void setY(int y) {
+        PlayerCharacter.y = y;
     }
 
     public static void  move(char move) {

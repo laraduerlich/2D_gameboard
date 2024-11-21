@@ -1,9 +1,14 @@
 import org.example.PlayerCharacter;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 
 public class PlayerCharacterTest {
-
+    @AfterEach
+    public void tearDown() {
+    PlayerCharacter.setY(0);
+    PlayerCharacter.setX(0);
+    }
 @Test
 void getX_expect0_whenStart() {
     // GIVEN
